@@ -9,10 +9,11 @@ public class PrintAllTheSubstringsOfAString {
         int len = str.length();
         int i = 0;
         for(i = 0 ; i<len;i++){
-            for (int j = 1 ; j <=len ; j++){
+            for (int j = i+1 ; j <=len ; j++){
                 String s = str.substring(i,j);
-                System.out.println(s);
+                System.out.print(s +"\t");
             }
+            System.out.println();
         }
     }
 }
